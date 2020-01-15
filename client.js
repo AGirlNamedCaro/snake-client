@@ -17,10 +17,21 @@ const connect = function() {
   conn.on("connect", () => {
     conn.setEncoding('utf8');
     conn.write("Name: CCI");
-  })
+
+    
+    
+    
+  });
+
+  
+    conn.write("Move: up");
+
+  
+
   conn.on('data', (data) => {
      
     console.log("Server says: ", data);
+    
     
     
   })
