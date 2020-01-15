@@ -8,7 +8,7 @@ const connect = function() {
   const conn = net.createConnection({ 
     host: '192.168.168.76',
     port: 3000
-    
+    //'192.168.168.76'
   });
 
   // interpret incoming data as text

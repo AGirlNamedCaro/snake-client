@@ -7,6 +7,7 @@ const handleUserInput = (key) => {
   }
   if(key === 'w') {
      connection.write("Move: up");
+     
   }
   if(key === 'a') {
     connection.write("Move: left");
@@ -16,7 +17,14 @@ const handleUserInput = (key) => {
 }
 if(key === 'd') {
   connection.write("Move: right");
+  }
+if(key === 'n') {
+  connection.write("Say: What\'s up noobs");
 }
+if(key === 'h') {
+  connection.write("Say: Charge!")
+}
+  
 }
 
 const setupInput = function(conn) {
