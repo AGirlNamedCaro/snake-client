@@ -12,10 +12,17 @@ const connect = function() {
   });
 
   // interpret incoming data as text
-  conn.setEncoding('utf8'); 
+  
 
+  conn.on("connect", () => {
+    conn.setEncoding('utf8');
+    conn.write("Name: CCI");
+  })
   conn.on('data', (data) => {
+     
     console.log("Server says: ", data);
+    
+    
   })
 
   return conn;
