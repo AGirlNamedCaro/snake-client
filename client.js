@@ -24,7 +24,7 @@ const connect = function() {
   });
 
   
-    conn.write("Move: up");
+  
 
   
 
